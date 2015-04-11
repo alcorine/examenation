@@ -1,0 +1,470 @@
+/*MIXIN*/
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+
+transition(property)
+  -webkit-transition property
+  -moz-transition property
+  -ms-transition property
+  -o-transition property
+  transition property
+
+box-shadow()
+  -webkit-box-shadow arguments
+  -moz-box-shadow arguments
+  box-shadow arguments
+
+
+yellow-color(arg)
+  color arg
+
+/*RESET*/
+ul
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus
+  outline: none;
+
+*
+  box-sizing border-box
+
+body
+  background #f6f6f6
+  max-width 1600px
+  margin 0 auto
+  padding 10px
+  font 14px 'CenturyGothic', sans-serif
+
+/***PROJECT ***/
+
+.header
+  padding 30px 80px 20px 100px
+
+
+
+.menu
+  display inline-block
+  float right
+  margin-top 45px
+  li
+    display inline-block
+    margin 0 10px
+    a
+      padding 15px 10px
+      font 16px 'Code-Light', sans-serif
+      text-transform uppercase
+      text-decoration none
+      &:hover
+        background #ffea00
+
+.page-title
+  padding 20px 0 20px 100px
+  background url("../images/page-title-bg.jpg") no-repeat
+  h1
+    background #424146
+    width 320px
+    padding 20px 0 20px 20px
+    font-weight 300
+    yellow-color(#ffea00)
+    font-size 35px
+    text-transform uppercase
+
+.content
+  width 73%
+  display inline-block
+  padding-top 80px
+
+.item
+  padding-bottom 15px
+  margin 10px
+  background #ffea00
+  display inline-block
+  width 47%
+
+.quote
+  float left
+  display inline-block
+  background #ffea00
+  font-style italic
+  blockquote
+    border none
+    padding-left 50px
+    margin 0
+    font 300 italic 21px 'CenturyGothic', sans-serif
+  cite
+    text-align right
+    display block
+    font 700 italic 11px 'CenturyGothic', sans-serif
+
+.news-cont
+  padding 0 20px
+  p
+    color #5e5e5e
+  a
+    color #000
+    h2
+      padding 20px 0
+      margin 0
+      font-size 23px
+  .like
+    color #5e5e5e
+    font-size 12px
+    border none
+    background #ffea00
+    float left
+
+.post-info
+  float right
+  font-size 12px
+  color #000
+
+.arrow-box
+  position relative
+  background #ffea00
+  &:after
+    bottom 100%
+    left 80%
+    border solid transparent
+    content " "
+    height 0
+    width 0
+    position absolute
+    pointer-events none
+    border-color rgba(255, 234, 0, 0)
+    border-bottom-color #ffea00
+    border-width 18px
+    margin-left -18px
+
+.img-cont
+  display block
+  img
+    display block
+    width 100%
+    height auto
+
+
+.pag
+  padding 60px 25px
+  text-align center
+  li
+    display inline-block
+    a
+      text-transform uppercase
+      font-size 20px
+      display block
+      color #414146
+      padding 10px
+    &:hover
+      background #ffea00
+    &:first-child
+      float left
+    &:last-child
+      float right
+
+.sidebar
+  padding-top 80px
+  display inline-block
+  width 26%
+  vertical-align top
+
+.search
+  input[type=search]
+    float left
+    height 30px
+    padding-left 10px
+    width 90%
+    border none
+    border-radius(15px)
+  input[type=submit]
+    overflow hidden
+    height 22px
+    width 23px
+    margin 5px 0 0 -30px
+    background url("../images/search-icon.png") no-repeat center
+    border none
+    background-size cover
+
+.archive,
+.categories,
+.search,
+.popular-posts,
+.tags
+  background #424147
+  padding 20px
+  margin-bottom 30px
+  h3
+    text-transform uppercase
+    margin 0 0 15px 0
+    yellow-color(#ffea00)
+    font-size 20px
+
+.categories,
+.archive
+  li
+    display inline-block
+    width 48%
+    padding-left 35px
+    line-height 40px
+    background url("../images/cat-list-img.png") no-repeat center left
+    a
+      color #fff
+      text-transform uppercase
+
+.tags
+  li
+    margin 10px 0
+    display inline-block
+    a
+      color #424147
+      text-transform uppercase
+      padding 5px 10px
+      background #ffea00
+
+.popular-posts
+  li
+    img
+      float left
+      margin-right 5px
+    a
+      h2
+        font-size 18px
+        color #fff
+        text-transform uppercase
+    .like-post
+      float right
+      border none
+      yellow-color(#ffea00)
+      background #424147
+    .data-publication
+      yellow-color(#ffea00)
+      float right
+
+.contact
+  margin 0 10px
+  padding 30px 10px
+  color #fff
+  background #414146
+  article
+    display inline-block
+    vertical-align top
+    margin 0 2%
+    h4
+      line-height 30px
+      font-weight 700
+.about-us
+  width 30%
+.scl
+  width 35%
+
+  .social-title
+    line-height 20px
+
+.contact-info
+  width 20%
+  address
+    margin 30px 0
+  dt
+    width 100px
+    text-align left
+    padding-left 40px
+    line-height 30px
+  dd
+    line-height 30px
+    margin-left 100px
+    a
+      color #FFEA00
+
+.contact-address
+  position relative
+  &:before
+    content ""
+    position absolute
+    top 0
+    left 0
+    width 30px
+    height 30px
+    background url("../images/contact-sprite.png") no-repeat
+    background-position 0 0
+
+.contact-tel
+  position relative
+  &:before
+    content ""
+    position absolute
+    top 0
+    left 0
+    width 30px
+    height 30px
+    background url("../images/contact-sprite.png") no-repeat
+    background-position -74px 0
+
+.contact-email
+  position relative
+  &:before
+    content ""
+    position absolute
+    top 0
+    left 0
+    width 30px
+    height 30px
+    background url("../images/contact-sprite.png") no-repeat
+    background-position -148px 0
+
+.spam-form
+  input[type=email]
+    float left
+    border none
+    border-bottom 1px solid #FFEA00
+    background #414146
+    height 28px
+  input[type=submit]
+    border none
+    width 28px
+    height 28px
+    background url("../images/contact-sprite.png") no-repeat
+    background-position -228px 0
+
+
+.social,.social:visited { color: #fff; }
+.social:hover { color: #fff; }
+.social {
+  margin: 0 2px; width: 20px; height: 20px;
+  display: inline-block; text-align: center; line-height:20px; color: #fff;
+
+  position: relative;
+  transform:rotateY(0deg);
+  transition(transform .25s ease-out);
+  transform-style:preserve-3d;
+}
+.social > div {
+  width: 20px; height: 20px; background: #000;
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+}
+.social >.front {
+  transform:translateZ(10px);
+  font-size: 10px;
+}
+.social >.back {
+  background: #3B5998; font-size: 10px;
+  transform:rotateY(-90deg) translateZ(10px);
+}
+
+
+.social.social-twitter > .back { background: #55ACEE; }
+.social.social-youtube > .back { background: #FF3333; color: #000; }
+.social.social-pinterest > .back { background: #e3262e; }
+.social.social-googleplus > .back { background: #dd4B39; }
+.social.social-skype > .back { background: #12A5F4; }
+.social.social-linkedin > .back { background: #4875B4; }
+.social.social-dribbble > .back { background: #ea4c89; }
+
+
+.social:hover {
+  transform: rotateY(100deg);
+}
+
+
+.lrn-btn
+  font-size 15px
+  color #fff
+  text-decoration none
+  line-height 40px
+  padding 0 15px
+  background #000
+  &:hover
+    color #fff
+    text-decoration none
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+.lrn-btn:before
+  content ""
+  position absolute
+  z-index -1
+  left 0
+  right 0
+  bottom 0
+  background #FFEA00
+  height 2px
+  -webkit-transition-property right
+  transition-property right
+  -webkit-transition-duration 0.3s
+  transition-duration 0.3s
+  -webkit-transition-timing-function ease-out
+  transition-timing-function ease-out
+
+.lrn-btn:hover:before, .lrn-btn:focus:before, .lrn-btn:active:before
+  right 100%
+
+.hvr-lrn-btn
+  display inline-block
+  vertical-align middle
+  -webkit-transform translateZ(0)
+  transform translateZ(0)
+  box-shadow 0 0 1px rgba(0, 0, 0, 0)
+  -webkit-backface-visibility hidden
+  backface-visibility hidden
+  -moz-osx-font-smoothing grayscale
+  position relative
+  overflow hidden
+  &:after
+    content ""
+    position absolute
+    z-index -1
+    left 100%
+    right 0
+    top 0
+    background #FFEA00
+    height 2px
+    -webkit-transition-property left
+    transition-property left
+    -webkit-transition-duration 0.3s
+    transition-duration 0.3s
+    -webkit-transition-timing-function ease-out
+    transition-timing-function ease-out
+
+.hvr-lrn-btn:hover:after, .hvr-lrn-btn:focus:after, .hvr-lrn-btn:active:after
+  left 0
+
+.footer
+  margin 0 10px
+  padding 26px 50px
+  color #fff
+  background #000
+  span
+    display inline-block
+  nav
+    font 500 16px "Code-Light", sans-serif
+    li
+      &:first-child
+        margin-left 0
+      a
+        padding 12px 10px
+        text-decoration none
+        display block
+        color #fff
+        text-transform uppercase
+        &:hover
+          background #ffea00
+
+.site-info
+  line-height 41px
+  display inline-block
+
+.foot-nav
+  float right
+    
